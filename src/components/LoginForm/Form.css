@@ -1,0 +1,115 @@
+/* form表单 */
+    #form{
+        width: 320px;
+        text-align: center;
+        padding-right: 18px;
+        border-right: 1px solid white;
+    }
+    #form input{
+        outline: none;
+        border: none;
+    }
+    #username,#password{
+        width: 320px;
+        height: 60px;
+        text-indent: 17px;
+        font-size: 16px;
+        color:white;
+        background-color: rgba(71, 95, 119, 0.5);
+    }
+    #username::-webkit-input-placeholder,#password::-webkit-input-placeholder{
+        color:#9fa9b6;
+    }
+    #password{
+        margin:25px 0 25px 0;
+    }
+    #sub{
+        width: 260px;
+        height: 70px;
+        margin-top: 25px;
+        font-size: 24px;
+        color: #36485e;
+        font-weight: bold;
+        letter-spacing: 30px;
+        background: #dae2ed;
+        /* background:url("../../assets/images/btn-login-pressdown.png") no-repeat; */
+    }
+        /* 登录按钮箭头 */
+    .submitBox{
+        position: relative;
+    }
+    .login-arrow{
+        display: inline-block;
+        width: 20px;
+        height: 18px;
+        background:url("../../assets/images/login-arrow.png") no-repeat;
+        position: absolute;
+        top: 56%;right: 85px;
+    }
+    
+        /* 忘记密码 */
+    .forgetPass a{
+        color: white;
+        letter-spacing: 2.4px;
+        border-bottom: 1px solid white;
+    }
+    .phoneBox{
+        position: relative;
+    }
+    .phone{
+        width: 290px;
+        height: 32px;
+        text-align: center;
+        line-height: 25px;
+        background:url("../../assets/images/info-bubble-contact-it.png") no-repeat center;
+        background-size:290px 32px; 
+        position: absolute;
+        top: -28px;left: 15px;
+        color: #36485e;
+    }
+    
+        /* 二维码 */
+    .QRcodeBox{
+        text-align: center;
+    }
+    .QRcode{
+        width: 154px;
+        height: 153px;
+        background:url("../../assets/images/qrcode.jpg") no-repeat center;
+        background-size:154px 153px; 
+        box-sizing: border-box;
+        margin-top: 38px;
+    }
+        /* 保持登录 */
+    .check{
+        vertical-align: middle;
+        margin-right: 14px;
+    }
+    .logging{
+        font-size: 14px;
+        letter-spacing: 2px;
+        color: #ffffff;
+        vertical-align: middle;
+    }
+    .status{
+        margin: 24px 0 12px 0;
+        position: relative;
+    }
+    .network{
+        width: 165px;
+        /* letter-spacing: 1px; */
+        color: #ffffff;
+    }
+        /* 保持登录title */
+    .chcekTitle{
+        box-sizing: border-box;
+        width: 205px;
+        height: 44px;
+        background:url("../../assets/images/info-bubble-inactivity.png") no-repeat center;
+        position: absolute;
+        top: -40px;left: 0;
+        text-align: left;
+        color: #36485e;
+        /* letter-spacing: 1px; */
+        /* padding: 5px 4px 6px 6px; */
+    }
