@@ -16,9 +16,9 @@ class Login extends Component {
     return (
       <div className="Login">
         <div className="LoginBox">
-          <img src={require('../../assets/images/sun-people-horizontal.png')} alt="" className="sunhorizontal"/> 
+          <img src={require('../../assets/images/sun-people-horizontal.png')} alt="" className="sunhorizontal"/>
           {/* form表单 */}
-          <Form />
+          <Form history={this.props.history}/>
           {/* 登录响应时间组件 */}
           <div style={{display:"none"}}>
             <Load />
