@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import './Form.css';
 
 class Form extends Component {
-  
+
   state = {//设置初始状态
     phoneHidden: false,
     chcekTitle :false,
@@ -23,6 +23,9 @@ class Form extends Component {
   onMouseLeaveTitle = () => {//鼠标移除（不支持事件冒泡）
      this.setState({ chcekTitle: false });
   };
+  submit = () => {
+    this.props.history.push('/home');
+  }
 
   render() {
     return (
@@ -39,7 +42,7 @@ class Form extends Component {
                 </p>
               </div>
               <div className="submitBox">
-                <input type="submit" id="sub" value="登录"/>
+                <input type="submit" id="sub" value="登录" onClick={this.submit}/>
                 <i className="login-arrow"></i>
               </div>
             </form>
