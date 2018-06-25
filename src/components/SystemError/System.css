@@ -1,0 +1,41 @@
+.System{
+    text-align: center;
+    margin-top: 38px;
+}
+.SystemImg{
+    margin-bottom: 75px;
+}
+.SystemError{
+    width: 440px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    margin: 0 auto;
+    padding-bottom: 66px;
+}
+.SystemEsc{
+    width: 355px;
+    height: 70px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 70px;
+    font-size: 24px;
+    letter-spacing: 10px;
+    color: #36485e;
+    font-weight: bold;
+    background:url("../../assets/images/flash-bg-blue.png") no-repeat;
+    background-size: 355px 70px;
+    position: relative;
+}
+.SystemEsc::before{
+    content:"";
+    width: 20px;
+    height: 18px;
+    position: absolute;
+    top: 26px;right:35px;
+    display: block;
+    background:url("../../assets/images/login-arrow.png") no-repeat;
+}

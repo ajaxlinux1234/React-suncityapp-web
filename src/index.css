@@ -1,0 +1,36 @@
+
+body,div,input,p,a,span,i,b,select,table,ul,ol,dl,img
+{
+    margin: 0;
+    padding:0;
+}
+body
+{
+    color:#333;/*字体颜色*/
+    background: #ffffff;
+    font:12px Tahoma,Geneva,"Justify";  /*字体12像素 微软雅黑*/
+}
+a
+{
+    color:#333;
+    text-decoration:none;
+}
+ul,ol
+{
+    list-style:none;  /* 设置列表标记的 默认会是实心圆点 设成none就是没有标记 */
+}
+/* ----------------------------------------------------会用到的样式 ----------------*/
+.clear:after	/* 清楚页面浮动，是为了防止因为浮动造成页面布局的变形 */
+{
+    clear:both;/* 清除全部样式 */
+    content:".";
+    display:block;/* 块级元素 */
+    font-size:0;
+    height:0;/* 高度为0 */
+    line-height:0;/* 行高为0 */
+    visibility:hidden;/* 规定元素隐藏 */
+}
+.clear{zoom:1;}/*兼容 IE6，7*/
+
+.fl{float:left;/* 漂浮向右 */  }
+.fr{float:right;/* 漂浮向左 */ }
